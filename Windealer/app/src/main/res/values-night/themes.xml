@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Windealer" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:statusBarColor">#1C1C1C</item>
+        <item name="background">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="alertDialogButtonGroupStyle">@style/myblacktheme</item>
+        <item name="backgroundColor">@color/black</item>
+
+    </style>
+    <style name="myblacktheme" parent="">
+        <item name="android:background">@color/black</item>
+        <item name="backgroundColor">@color/black</item>
+        <item name="android:tint">@color/white</item>
+    </style>
+    <style name="topbartheme" parent="">
+        <item name="android:background">#1C1C1C</item>
+        <item name="backgroundColor">@color/black</item>
+        <item name="android:tint">@color/white</item>
+    </style>
+    <style name="splashtheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+    <style name="mywhitetheme">
+        <item name="android:background">@drawable/shadedback2</item>
+    </style>
+    <style name="blackcard" parent="">
+        <item name="android:background">#101010</item>
+    </style>
+</resources>

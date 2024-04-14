@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.WINDEAL" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:colorBackground">@color/white</item>
+
+<item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="mywhitetheme">
+        <item name="android:background">@drawable/shadedback</item>
+    </style>
+    <style name="mytheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:colorPrimary">@color/white</item>
+    </style>
+    <style name="activeindicate" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#0F8EF3</item>
+        <item name="itemIconTint">@color/black</item>
+    </style>
+
+<style name="roundImage" parent="">
+    <item name="cornerSize">50dp</item>
+    <item name="color">#00FFFFFF</item>
+</style>
+    <style name="roundImage1" parent="">
+    <item name="cornerSize">17.5dp</item>
+    <item name="color">#00FFFFFF</item>
+</style>
+    <style name="topbartheme" parent="">
+        <item name="android:background">@color/white</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:tint">@color/black</item>
+    </style>
+    <style name="myblacktheme" parent="">
+        <item name="android:background">@color/white</item>
+
+    </style>
+    <style name="blackcard" parent="">
+        <item name="android:background">#F3F3F3</item>
+    </style>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/myblacktheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:foregroundGravity="center">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:foregroundGravity="center_vertical"
+        android:text="Profile"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilepicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:shapeAppearanceOverlay="@style/roundImage"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#1C1C1C"
+        android:foregroundGravity="center_vertical|clip_horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="Username"
+        android:paddingLeft="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/profilepicture"
+        app:layout_constraintStart_toStartOf="@+id/profilepicture"
+        app:layout_constraintTop_toBottomOf="@+id/profilepicture" />
+
+    <ImageView
+        android:id="@+id/profilebtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="10dp"
+        android:fadingEdgeLength="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pen" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+
+        android:backgroundTint="#F82A02"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingLeft="10dp"
+
+        android:paddingRight="10dp"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/addaccount"
+        app:layout_constraintStart_toStartOf="@+id/addaccount"
+        app:layout_constraintTop_toBottomOf="@+id/addaccount" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:foregroundGravity="center_vertical"
+        android:text="Add account"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@drawable/blueborder"
+        android:clickable="true"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/mobileno"
+        app:layout_constraintStart_toStartOf="@+id/mobileno"
+        app:layout_constraintTop_toBottomOf="@+id/mobileno" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_vertical"
+        android:hint="Address"
+        android:paddingStart="10dp"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/mobileno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_vertical"
+        android:hint="Mobile no."
+        android:paddingStart="10dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/address"
+        app:layout_constraintStart_toStartOf="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

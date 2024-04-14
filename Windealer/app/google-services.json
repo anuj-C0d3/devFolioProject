@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "455300835570",
+    "firebase_url": "https://windeals-e28e4-default-rtdb.firebaseio.com",
+    "project_id": "windeals-e28e4",
+    "storage_bucket": "windeals-e28e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455300835570:android:de646ab8d0c0a7e545486b",
+        "android_client_info": {
+          "package_name": "com.example.windeal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOkpWjywHODPuBXwUlmHzpSxt8VGXiKx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455300835570:android:86f14931535aef0f45486b",
+        "android_client_info": {
+          "package_name": "com.example.windealer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOkpWjywHODPuBXwUlmHzpSxt8VGXiKx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

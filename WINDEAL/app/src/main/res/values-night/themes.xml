@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WINDEAL" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:statusBarColor">#1C1C1C</item>
+        <item name="background">@color/black</item>
+<item name="android:textColor">@color/white</item>
+
+        <item name="android:colorPrimary">@color/black</item>
+
+        <item name="backgroundColor">@color/black</item>
+
+
+    </style>
+    <style name="activeindicate" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/black</item>
+        <item name="itemIconTint">@color/black</item>
+    </style>
+    <style name="topbartheme" parent="">
+        <item name="android:background">#1C1C1C</item>
+        <item name="backgroundColor">@color/black</item>
+
+    </style>
+    <style name="myblacktheme" parent="">
+        <item name="android:background">@color/black</item>
+        <item name="backgroundColor">@color/black</item>
+
+
+        <item name="android:shadowColor">#FFFFFF</item>
+    </style>
+    <style name="mywhittheme">
+        <item name="android:background">@drawable/shadedback2</item>
+    </style>
+    <style name="blackcard" parent="">
+        <item name="android:background">#101010</item>
+    </style>
+
+</resources>

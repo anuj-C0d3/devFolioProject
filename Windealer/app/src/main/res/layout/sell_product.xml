@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/selling_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/textback"
+        android:ems="10"
+        android:hint="Customer name"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selling_product" />
+
+    <EditText
+        android:id="@+id/selling_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/textback"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/selling_name"
+        app:layout_constraintStart_toStartOf="@+id/selling_name"
+        app:layout_constraintTop_toBottomOf="@+id/selling_name" />
+
+    <EditText
+        android:id="@+id/selling_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/textback"
+        android:ems="10"
+        android:hint=" Mobile no."
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/selling_address"
+        app:layout_constraintStart_toStartOf="@+id/selling_address"
+        app:layout_constraintTop_toBottomOf="@+id/selling_address" />
+
+    <EditText
+        android:id="@+id/selling_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/textback"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/selling_phone"
+        app:layout_constraintStart_toStartOf="@+id/selling_phone"
+        app:layout_constraintTop_toBottomOf="@+id/selling_phone" />
+
+    <TextView
+        android:id="@+id/selling_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="10dp"
+        android:text="Product"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/selling_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="@color/lightblue"
+        android:text="Proceed"
+        app:layout_constraintEnd_toEndOf="@+id/selling_quantity"
+        app:layout_constraintStart_toStartOf="@+id/selling_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/selling_quantity" />
+
+    <TextView
+        android:id="@+id/totalamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Total Amount"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/proceed"
+        app:layout_constraintStart_toStartOf="@+id/proceed"
+        app:layout_constraintTop_toBottomOf="@+id/proceed" />
+
+    <EditText
+        android:id="@+id/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/textback"
+        android:ems="10"
+        android:hint="% Discount"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/totalamount"
+        app:layout_constraintStart_toStartOf="@+id/totalamount"
+        app:layout_constraintTop_toBottomOf="@+id/totalamount" />
+
+    <Button
+
+        android:id="@+id/SellingatNoEmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#494949"
+        android:text="No Emi"
+        app:layout_constraintStart_toStartOf="@+id/discount"
+        app:layout_constraintTop_toBottomOf="@+id/discount" />
+
+    <Button
+        android:id="@+id/SellingatEmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/lightblue"
+        android:text="EMI"
+        app:layout_constraintEnd_toEndOf="@+id/discount"
+        app:layout_constraintTop_toBottomOf="@+id/discount" />
+
+    <FrameLayout
+        android:id="@+id/myFrameLayout"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/SellingatEmi"
+        app:layout_constraintStart_toStartOf="@+id/SellingatNoEmi"
+        app:layout_constraintTop_toBottomOf="@+id/SellingatNoEmi">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/gentbill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightblue"
+        android:text="Generate Bill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/myFrameLayout"
+        app:layout_constraintStart_toStartOf="@+id/myFrameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/myFrameLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
